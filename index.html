@@ -6,11 +6,37 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <style>
-
+        .conBorder {
+            border: 1px solid #888888;
+            height: 100px;
+        }
+        .col-md-6 {
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
 
+<div class="container">
+    <div class="row">
+          <div class="col-md-6 col-sm-8 col-lg-4 conBorder">Column 1</div>
+          <div class="col-md-6 col-sm-4 col-lg-8 conBorder">Column 2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4  conBorder">Column 1</div>
+        <div class="col-md-4 offset-md-4 conBorder">Column 2</div>
+    </div>4
+
+</div>
+<div class="container-fluid">
+    <div class="col-md-6 conBorder">Column 1</div>
+    <div class="col-md-6 conBorder">Column 2</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"
+        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+        crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script scr="js/bootstrap.min.js"></script>
 
